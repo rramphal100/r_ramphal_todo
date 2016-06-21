@@ -1,0 +1,25 @@
+nav ul{
+	float: right;
+	list-style: none;
+}
+nav ul li{
+	margin-right: 8px;
+	color: #000000;
+	display: inline;
+	list-style-type: none;
+	border-color: #0044ff;
+	border-width: 1px;
+	border-style: solid;
+}
+
+nav ul li:hover{
+	color: #0044ff;
+}	
+
+a{
+	color: #000000;
+}
+
+a:hover{
+	color: #0044ff;
+}
