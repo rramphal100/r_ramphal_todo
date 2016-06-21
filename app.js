@@ -64,9 +64,11 @@ app.post('/entries', function(req,res,next){
 });
 
 app.post('/updateentry/:id', function(req,res,next){
-	db.none('UPDATE entries SET data=\'${text}\', date=\'${date}\' WHERE id=' + req.params.id, req.body)
+	var text = req.body.text;
+	var date = req.body.date;
+	db.none("UPDATE entries SET data='" + text + "', date='" + date + "' WHERE id=" + req.params.id)
 	.then(function(){
-		res.redirect('/entries/$1', req.params.id);
+		res.redirect('/entries/' + req.params.id);
 	})
 	.catch(function(err){
 		return next(err);
