@@ -1,0 +1,17 @@
+<h1>Entry Info</h1>
+<p></p>
+<p>{{message}}</p>
+<p></p>
+<p>Date: {{date}}</p>
+<p></p>
+<p>Use the form below to update this entry if necessary. Any changes should be reflected above after submitting.</p>
+<form action='/updateentry/{{id}}' method='POST'>
+	<input type='text' name='text' placeholder='{{message}}'>
+	<input type='text' name='date' placeholder='{{date}}'>
+	<input type='submit' value='Submit Changes'>
+</form>
+
+<p></p>
+<form action='/entries/{{id}}' method='POST'>
+	<input type='submit' value='Click here to delete this entry from the to-do list.'>
+</form>

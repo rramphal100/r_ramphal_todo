@@ -1,0 +1,27 @@
+{
+  "name": "r_ramphal_todo",
+  "version": "1.0.0",
+  "description": "To-Do list web app powered by express,pg-promise, bluebird, and others.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rramphal100/r_ramphal_todo.git"
+  },
+  "author": "Ryan Ramphal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rramphal100/r_ramphal_todo/issues"
+  },
+  "homepage": "https://github.com/rramphal100/r_ramphal_todo#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "hbs": "^4.0.0",
+    "path": "^0.12.7",
+    "pg-promise": "^4.7.5"
+  }
+}
